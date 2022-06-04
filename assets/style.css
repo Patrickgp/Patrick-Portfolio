@@ -120,51 +120,47 @@ nav ul li a {
 }
 
 .about {
-    margin: 0;
-    padding: 0;
-    background-color: var(--main-bg-color);
     height: 100vh;
-    display: flex;
+    background-color: var(--main-bg-color);
 }
 
-.about h2 {
-    width: 100%;
+.rows {
     display: flex;
+    justify-content: center;
+    align-content: space-between;
     flex-wrap: wrap;
-    position: absolute;
-    top: 125vh;
-    left: 62vw;
-    margin: 0;
+    padding: 25vh 0 0 0;
+}
+
+.about-me {
+    width: 500px;
+    text-align: center;
+    padding-left: 10vw;
+}
+
+.about-me h2 {
     color: var(--secondary-color);
     font-weight: 300;
-    border-bottom: var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.about-me p {
+    color: var(--main-color);
+    font-size: 1.2rem;
+    font-weight: 300;
 }
 
 .about img {
-    width: 400px;
-    display: flex;
-    flex-wrap: wrap;
-    flex: 0;
-    position: absolute;
-    top: 125vh;
-    left: 20vw;
-    border-radius: 25px;
+    max-width: 300px;
+    align-self: center;
     border: 3px solid var(--secondary-color);
-}
-
-.about p {
-    position: absolute;
-    display: flex;
-    flex-wrap: wrap;
-    top: 130vh;
-    font-weight: 300;
-    font-size: 16pt;
-    left: 50vw;
-    width: 30%;
-    text-align: center;
-    color: var(--main-color);
+    border-radius: 25px;
 }
 
 #projects {
+    display: none;
+}
+
+#contact {
     display: none;
 }
