@@ -122,6 +122,7 @@ nav ul li a {
 .secondary-bg {
     height: 100vh;
     background-color: var(--main-bg-color);
+    border: 2px solid var(--secondary-color);
 }
 
 .rows {
@@ -191,19 +192,30 @@ nav ul li a {
     align-self: center;
 }
 
+.contact-me {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 20vh;
+}
+
 .contact h2 {
     margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 325vh;
+    padding: 0 25px;
+    color: var(--secondary-color);
+    font-weight: 300;
+    border-bottom: 2px solid var(--secondary-color);
+    font-size: 24pt;
 }
+
 
 .icon-bar {
     display: flex;
     background-color: none;
     justify-content: space-evenly;
     align-content: center;
-    padding: 25vh;
+    padding: 1vh;
+    height: 150px;
   }
   
 .icon-bar a{
@@ -251,3 +263,33 @@ background: #6e5494;
 transition: ease-in-out 0.3s;
 border: 3px solid var(--main-color);
 }
+
+.contact-form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: var(--secondary-color);
+    font-weight: 300;
+    text-align: center;
+}
+
+.contact-form > * {
+    flex: 1;
+}
+
+.contact-form input, .contact-form textarea {
+    border: 1px solid var(--secondary-color);
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--secondary-color);
+    width: 50%;
+    margin: 0 auto 15px auto;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+  }
+
+  .contact-form h3 {
+      margin: 0;
+  }
