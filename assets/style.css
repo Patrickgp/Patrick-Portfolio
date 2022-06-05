@@ -91,7 +91,7 @@ nav ul li a {
 }
 
 .landing-bg {
-    background-image: url(assets/images/abstract.jpeg);
+    background-image: url(../assets/images/abstract.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 10% 50%;
