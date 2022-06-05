@@ -191,3 +191,63 @@ nav ul li a {
     align-self: center;
 }
 
+.contact h2 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 325vh;
+}
+
+.icon-bar {
+    display: flex;
+    background-color: none;
+    justify-content: space-evenly;
+    align-content: center;
+    padding: 25vh;
+  }
+  
+.icon-bar a{
+display: block;
+text-align: center;
+padding: 15px 20px 5px 20px;
+transition: all 0.3s ease;
+color: var(--main-color);
+font-size: 82px;
+border-radius: 5px;
+background: -webkit-linear-gradient(45deg, var(--main-color), var(--main-color));
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.facebook i{
+padding: 0 10px;
+}
+
+.facebook:hover{
+background: #3B5998;
+-webkit-text-fill-color: white;
+transition: ease-in-out 0.3s;
+border: 3px solid var(--main-color);
+}
+
+.instagram:hover {
+background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+-webkit-text-fill-color: white;
+transition: ease-in-out 0.3s;
+border: 3px solid var(--main-color);
+}
+
+.linkedin:hover {
+background: #007bb5;
+-webkit-text-fill-color: white;
+transition: ease-in-out 0.3s;
+border: 3px solid var(--main-color);
+}
+
+.github:hover {
+background: #6e5494;
+-webkit-text-fill-color: white;
+transition: ease-in-out 0.3s;
+border: 3px solid var(--main-color);
+}
