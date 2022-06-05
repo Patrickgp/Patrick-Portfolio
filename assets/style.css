@@ -119,17 +119,17 @@ nav ul li a {
     height: 200px;
 }
 
-.about {
+.secondary-bg {
     height: 100vh;
     background-color: var(--main-bg-color);
 }
 
 .rows {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-content: space-between;
     flex-wrap: wrap;
-    padding: 25vh 0 0 0;
+    padding: 25vh 0 25vh 0;
 }
 
 .about-me {
@@ -157,8 +157,38 @@ nav ul li a {
     border-radius: 25px;
 }
 
-#projects {
-    display: none;
+.projects {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5vh 0 0 0;
+}
+
+.projects h2 {
+    margin: 0;
+    padding: 0 25px 0 25px;
+    color: var(--secondary-color);
+    font-weight: 300;
+    border-bottom: 2px solid var(--secondary-color);
+    text-align: center;
+}
+
+.link-hover {
+    border: 2px solid var(--secondary-color);
+    border-radius: 25px;
+}
+
+.link-hover:hover {
+    opacity: 90%;
+    width: 405px;
+    transition: 0.3s ease-in-out;
+}
+
+.projects img {
+    width: 400px;
+    align-self: center;
 }
 
 #contact {
