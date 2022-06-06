@@ -161,6 +161,7 @@ nav ul li a {
 .projects {
     display: flex;
     justify-content: space-evenly;
+    flex-direction: column;
     align-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -185,6 +186,11 @@ nav ul li a {
     opacity: 90%;
     width: 405px;
     transition: 0.3s ease-in-out;
+}
+
+.landing-images {
+    display: flex;
+    flex-direction: row;
 }
 
 .projects img {
