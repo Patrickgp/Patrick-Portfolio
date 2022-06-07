@@ -17,7 +17,7 @@ body {
 }
 
 header {
-    position: fixed;
+    position: fixed;    
 }
 
 header h1 {
@@ -246,28 +246,24 @@ padding: 0 10px;
 background: #3B5998;
 -webkit-text-fill-color: white;
 transition: ease-in-out 0.3s;
-border: 3px solid var(--main-color);
 }
 
 .instagram:hover {
 background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
 -webkit-text-fill-color: white;
 transition: ease-in-out 0.3s;
-border: 3px solid var(--main-color);
 }
 
 .linkedin:hover {
 background: #007bb5;
 -webkit-text-fill-color: white;
 transition: ease-in-out 0.3s;
-border: 3px solid var(--main-color);
 }
 
 .github:hover {
 background: #6e5494;
 -webkit-text-fill-color: white;
 transition: ease-in-out 0.3s;
-border: 3px solid var(--main-color);
 }
 
 .contact-form {
@@ -290,12 +286,19 @@ border: 3px solid var(--main-color);
     padding: 7px 15px;
     font-size: 16px;
     color: var(--secondary-color);
-    width: 50%;
+    width: 40%;
     margin: 0 auto 15px auto;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.75);
   }
 
+  .contact-form input {
+      width: 25%;
+  }
+
+  .contact-form textarea {
+      height: 35%;
+  }
   .contact-form h3 {
       margin: 0;
   }
