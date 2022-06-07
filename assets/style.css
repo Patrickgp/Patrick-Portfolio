@@ -580,6 +580,12 @@ nav ul li a {
         justify-content: space-between;
     }
 
+    .projects img {
+        width: 380px;
+        align-self: center;
+        margin: 0 25px;
+    }
+
     .about-me p {
         color: var(--main-color);
         font-size: 16px;
