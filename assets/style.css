@@ -373,7 +373,7 @@ nav ul li a {
         flex-direction: column;
         align-content: center;
         align-items: center;
-        padding: 20vh 0 0 0;
+        padding: 0vh 0 0 0;
     }
     
     .projects h2 {
@@ -390,6 +390,7 @@ nav ul li a {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: space-between;
+        margin-top: -125px;
     }
 
     .contact h2 {
@@ -474,7 +475,7 @@ nav ul li a {
     }
     
     .projects h2 {
-        margin: 125px 0 -100px 0;
+        margin: 0px 0 -100px 0;
         padding: 0;
         color: var(--secondary-color);
         font-weight: 300;
@@ -508,7 +509,6 @@ nav ul li a {
         left: 5vw;
         height: 200px;
     }
-    
 }
 
 @media only screen and (max-width: 425px) {
@@ -541,7 +541,7 @@ nav ul li a {
     .cta a {
         display: block;
         position: absolute;
-        top: 15vw;
+        top: 10vw;
         margin-top: 20px;
         left: 0;
         background-color: var(--tertiary-color);
@@ -562,7 +562,7 @@ nav ul li a {
         align-content: center;
         align-items: center;
         flex-wrap: wrap;
-        padding: 5vh 0 0 0;
+        padding: 10vh 0 0 0;
     }
     
     .projects h2 {
