@@ -4,98 +4,119 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="./assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/dabfb88b62.js" crossorigin="anonymous"></script>
-    <title>Patrick Poopathi | Portfolio</title>
+    <title>Patrick Poopathi | Full Stack Web Dev</title>
 </head>
+
 <body>
-<!-- Navigation start -->
+    
     <header>
-        <h1><a href="">Patrick Poopathi</br><span>Full Stack Web Developer</span></a></h1>
+        
         <nav>
+        
+            <h1><a href="">Patrick Poopathi </br> <span>Full Stack Web Developer</span></a></h1>
+        
             <ul>
-                <div class="nav-bar"> <!-- Will convert into hamburger menu on smaller screens when javascript functionality becomes available -->
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">My Projects</a></li>
-                </div>
-                <div class="cta">
-                    <li><a href="#contact">Let's Talk</a></li>
-                </div>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">My Projects</a></li>
+                <li class="cta"><a href="#contact">Let's Talk</a></li>
             </ul>
+        
         </nav>
+
     </header>
-<!-- Navigation End -->
-<!-- Landing Page Starts-->
-    <section class="hero" id="home">
+
+    <section class="home" id="home">
+        
         <div class="landing-bg" title="Photo by Milad Fakurian on Unsplash "></div>
+        
         <div class="hero-cta">
+        
             <svg class="hero-arrow" width="24" height="140" viewBox="0 0 24 140" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.9393 139.061C11.5251 139.646 12.4749 139.646 13.0607 139.061L22.6066 129.515C23.1924 128.929 23.1924 127.979 22.6066 127.393C22.0208 126.808 21.0711 126.808 20.4853 127.393L12 135.879L3.51472 127.393C2.92893 126.808 1.97919 126.808 1.3934 127.393C0.807611 127.979 0.807611 128.929 1.3934 129.515L10.9393 139.061ZM10.5 0L10.5 138H13.5L13.5 0L10.5 0Z" fill="#480075"/>
             </svg>                
+        
             <h2 class="hero-title">A Bright Future Begins Here</h2>
         </div>
-    </section>
-<!-- Landing Page Ends-->
-<!-- About Me Starts -->
-    <section class="about secondary-bg" id="about">
-        <div class="rows">    
-            <img src="assets/images/Selfie.jpeg" alt="A picture of Patrick Poopathi">
-            <div class="about-me">
-                <h2>About Me</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                    Sed tincidunt nisl in massa pharetra tincidunt. Sed accumsan elit vitae arcu ullamcorper malesuada vel eget enim. 
-                    Vivamus sed efficitur elit. Aliquam molestie tellus augue, ut mattis nibh dignissim non. 
-                    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus sed efficitur elit. 
-                    Aliquam molestie tellus augue, ut mattis nibh dignissim non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-                    Vivamus sed efficitur elit. Aliquam molestie tellus augue, ut mattis nibh dignissim non. 
-                </p>
-            </div>
-        </div>
-    </section>
-<!-- About Me Ends -->
-<!-- My Projects Starts -->
-    <section class="projects secondary-bg" id="projects">
 
+    </section>
+
+    <section class="about" id="about">
+        
+        <h2>About Me</h2>
+        
+        <img src="./assets/images/Selfie.jpeg" alt="Picture of Patrick Poopathi">
+        
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio soluta, 
+            provident accusantium ut saepe omnis voluptatum delectus repellendus in. Quis ab vitae mollitia fuga magni maxime, 
+            maiores ducimus iste sunt? Expedita ducimus harum natus sit laudantium corrupti? Fugit, corporis sunt. Odio soluta beatae 
+            voluptatibus possimus fugit omnis dolore laborum! Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus optio soluta, 
+            provident accusantium ut saepe omnis voluptatum delectus repellendus in. Quis ab vitae mollitia fuga magni maxime, 
+            maiores ducimus iste sunt? Expedita ducimus harum natus sit laudantium corrupti? Fugit, corporis sunt. Odio soluta beatae 
+            voluptatibus possimus fugit omnis dolore laborum!
+        </p>
+
+    </section>
+
+    <section class="projects" id="projects">
+        
         <h2>My Projects</h2>
-        <div class="landing-images">
-            <a href="#"><img class="scss link-hover" src="assets/images/SCSS-Portfolio.png" alt="Patrick Poopathi's previous attempt at a portfolio webpage using SCSS for styling"></a>
-            <a href="#"><img class="sailor-restaurant link-hover" src="assets/images/The-Old-Sailor.png" alt="A landing page made for a fake restaurant"></a>
-            <a href="#"><img class="run-buddy link-hover" src="assets/images/Run-Buddy.png" alt="Run Buddy is a personal trainer website mock up made during Butler Coding Bootcamp"></a>
-        </div>
+            
+            <div class="firstLP">
+                <a href="https://patrickgp.github.io/SCSS-Portfolio/" target="_blank"><img src="./assets/images/SCSS-Portfolio.png" alt="Screenshot of my first SCSS attempt"></a>
+                <h3>HTML + SCSS + JS</h3>
+                <p>This is an attempt at creating a portfolio webpage utilizing SCSS and HTML. There are some Javascript aspects to create the "back to top" and "hamburger menu" buttons.</p>
+            </div>
+            
+            <div class="nextLP">
+                <a href="https://patrickgp.github.io/run-buddy/" target="_blank"><img src="./assets/images/Run-Buddy.png" alt="Screenshot of the first website made in Coding Bootcamp"></a>
+                <h3>HTML + CSS</h3>
+                <p>I made this website as a work-along during my Butler Coding Bootcamp. I learned alot regarding layout and utilizing forms and inputs.</p>
+            </div>
+            
+            <div class="nextLP">
+                <a href="https://patrickgp.github.io/The-Old-Sailor/" target="_blank"><img src="./assets/images/The-Old-Sailor.png" alt="Screenshot of restaurant landing page mock-up"></a>
+                <h3>HTML + CSS</h3>
+                <p>This is a mock-up restaurant landing page so that I could practice web design at a real-world level. The scaling and layout skills that I have learned thus far will help get this site to the next level.</p>
+            </div>
+    
+        </section>
 
-    </section>
-<!-- My Projects Ends -->
-<!-- Contact Section Starts -->
-    <section class="contact secondary-bg" id="contact">
+    <section class="contact" id="contact">
+        
         <div class="contact-me">
-           <h2>Let's Talk</h2>
+            <h2>Let's Talk</h2>
         </div>
-        <div class="icon-bar">
-            <a href="https://github.com/Patrickgp" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/patrick-poopathi-a0586289/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/manickampatrick/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.facebook.com/patrick.manickam/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-        </div>
-        <div class="contact-form">
-            <form action=""> <!-- waiting to put in functionality --> 
-                <label for="Email">Enter Your Email Address: </label>
-                <input class="form-input" placeholder="Email Address" type="email" id="email" name="email">
-                <label for="contact-name"> Your Name</label>
-                <input type="text" placeholder="Your Name" id="contact-name">
-                <label for="contact-message">Message</label>
-                <textarea name="contact-message" placeholder="Message"></textarea>
-                <a href=""><input class="button" type="submit" value="Send Email"></a>
-                <!-- waiting to put in functionality -->
-                <input class="button" type="reset">
-            </form>
-            <h3>I can't wait to see what we'll do!</h3>
-        </div>
+         
+         <div class="icon-bar">
+             <a href="https://github.com/Patrickgp" target="_blank" class="github"><i class="fa-brands fa-github"></i></a>
+             <a href="https://www.linkedin.com/in/patrick-poopathi-a0586289/" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin-in"></i></a>
+             <a href="https://www.instagram.com/manickampatrick/" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+             <a href="https://www.facebook.com/patrick.manickam/" target="_blank" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+         </div>
+
+         <div class="contact-form">
+             <form action=""> <!-- waiting to put in functionality --> 
+                 <label for="Email">Enter Your Email Address: </label>
+                 <input class="form-input" placeholder="Email Address" type="email" id="email" name="email">
+                 <label for="contact-name"> Your Name</label>
+                 <input type="text" placeholder="Your Name" id="contact-name">
+                 <label for="contact-message">Message</label>
+                 <textarea name="contact-message" placeholder="Message"></textarea>
+                 <a href=""><input class="button" type="submit" value="Send Email"></a>
+                 <!-- waiting to put in functionality -->
+                 <input class="button" type="reset">
+             </form>
+        
+            </div>
     </section>
-<!-- Contact Section Ends -->
+
 </body>
+
 </html>
