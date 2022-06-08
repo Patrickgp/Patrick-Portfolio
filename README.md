@@ -12,3 +12,6 @@ My goal in creating this portfolio page was to provide a potential employer with
 
 ![Screen Shot 2022-06-07 at 10 03 43 PM](https://user-images.githubusercontent.com/86730331/172515487-7b920ab0-a4a1-4297-b997-1d4f9759fb30.png)
 -Screenshot of active website landing page
+
+<img width="1624" alt="Screen Shot 2022-06-07 at 10 55 21 PM" src="https://user-images.githubusercontent.com/86730331/172521744-fabc9411-d632-415c-a5db-89db3b840cc5.png">
+-Screenshot of website landing page at 375 pixel width
