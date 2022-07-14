@@ -1,452 +1,428 @@
 :root {
-    --primary-color: #480075;
-    --secondary-color: #3272d6;
-    --tertiary-color: #ee8328;
-    --second-bg-color: #FFD1AF;
-    /* using figma I was able to identify colors that I wanted to make a 
+  --primary-color: #480075;
+  --secondary-color: #3272d6;
+  --tertiary-color: #ee8328;
+  --second-bg-color: #ffd1af;
+  /* using figma I was able to identify colors that I wanted to make a 
     theme with the colors may change so I used variables to store them */
 }
 
 * {
-    scroll-behavior: smooth;
-    overflow-x: none;
-    /* used as a precautionary in case my page elements extend past where 
+  scroll-behavior: smooth;
+  overflow-x: none;
+  /* used as a precautionary in case my page elements extend past where 
     I want them to. In my wireframe I wanted the width to be a fixed thing */
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    /* imported the poppins font family from google fonts */
-    margin: 0;
-    padding: 0;
+  font-family: "Poppins", sans-serif;
+  /* imported the poppins font family from google fonts */
+  margin: 0;
+  padding: 0;
 }
 
 nav {
-    height: 150px;
-    position: fixed; /* I wanted the nav bar to travel the height of the page.*/
-    width: 100vw;
-    background-image: url(./images/abstract.jpeg);
-    background-size: cover;
-    background-position: 10% 20%; /* Used background position to better match my wireframe in Figma*/
-    z-index: 9999; /*used z-index to ensure that the nav bar is always on top*/
+  height: 150px;
+  position: fixed; /* I wanted the nav bar to travel the height of the page.*/
+  width: 100vw;
+  background-image: url(./images/abstract.jpeg);
+  background-size: cover;
+  background-position: 10% 20%; /* Used background position to better match my wireframe in Figma*/
+  z-index: 9999; /*used z-index to ensure that the nav bar is always on top*/
 }
 
 nav h1 {
-    margin: 0;
-    padding: 20px;
-    font-size: 34px;
-    font-weight: 400;
+  margin: 0;
+  padding: 20px;
+  font-size: 34px;
+  font-weight: 400;
 }
 
 span {
-    position: absolute;
-    left: 100px;
-    font-weight: 300;
-    color: #0374dd;
+  position: absolute;
+  left: 100px;
+  font-weight: 300;
+  color: #0374dd;
 }
 
 nav h1 a {
-    text-decoration: none;
-    color: var(--primary-color);
+  text-decoration: none;
+  color: var(--primary-color);
 }
 
 nav ul {
-    position: absolute;
-    right: 100px;
-    top: 50px;
+  position: absolute;
+  right: 100px;
+  top: 50px;
 }
 
 nav ul li {
-    list-style-type: none;
-    display: inline;
-    padding: 25px;
+  list-style-type: none;
+  display: inline;
+  padding: 25px;
 }
 
 nav ul li a {
-    text-decoration: overline;
-    font-size: 20px;
-    font-weight: 300;
-    color: var(--tertiary-color);
+  text-decoration: overline;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--tertiary-color);
 }
 
 nav ul li a:hover {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .landing-bg {
-    background-image: url(./images/abstract.jpeg);
-    background-size: cover;
-    background-position: 10% 50%; /*Used background position to match wireframe on Figma*/
-    height: 100vh;
+  background-image: url(./images/abstract.jpeg);
+  background-size: cover;
+  background-position: 10% 50%; /*Used background position to match wireframe on Figma*/
+  height: 100vh;
 }
 
 .hero-title {
-    position: absolute;
-    color: var(--primary-color);
-    top: 50vh;
-    left: 10vw;
-    width: 400px;
-    font-size: 64px;
-    font-weight: 300;
+  position: absolute;
+  color: var(--primary-color);
+  top: 50vh;
+  left: 10vw;
+  width: 400px;
+  font-size: 64px;
+  font-weight: 300;
 }
 
 .hero-arrow {
-    position: absolute;
-    top: 62vh;
-    left: 5vw;
+  position: absolute;
+  top: 62vh;
+  left: 5vw;
 }
 
 .about {
-    height: 1000px;
-    background-color: var(--second-bg-color);
-    border: 2px solid var(--secondary-color);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  height: 1000px;
+  background-color: var(--second-bg-color);
+  border: 2px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .about h2 {
-    text-align: center;
-    margin: 0 0 10px 0;
-    padding: 175px 40px 0 40px;
-    font-size: 48px;
-    font-weight: 300;
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 175px 40px 0 40px;
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .about img {
-    width: 300px;
-    border-radius: 25px;
-    border: 2px solid var(--secondary-color);
+  width: 300px;
+  border-radius: 25px;
+  border: 2px solid var(--secondary-color);
 }
 
 .about p {
-    width: 45%;
-    text-align: center;
-    color: var(--primary-color);
+  width: 45%;
+  text-align: center;
+  color: var(--primary-color);
 }
 
 .projects {
-    height: 2200px;
-    background-color: var(--second-bg-color);
-    border: 2px solid var(--secondary-color);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  height: 2200px;
+  background-color: var(--second-bg-color);
+  border: 2px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .projects h2 {
-    text-align: center;
-    margin: 0 0 10px 0;
-    padding: 175px 40px 0 40px;
-    font-size: 48px;
-    font-weight: 300;
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+  text-align: center;
+  margin: 40px 0;
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .projects img {
-    width: 600px;
-    height: auto;
-    border: 3px solid var(--tertiary-color);
-    border-radius: 25px;
+  width: 600px;
+  height: auto;
+  border: 3px solid var(--tertiary-color);
+  border-radius: 25px;
 }
 
 .projects img:hover {
-    border: 3px solid var(--secondary-color);
+  border: 3px solid var(--secondary-color);
 }
 
 .projects p {
-    width: 400px;
-    text-align: center;
-}
-
-.firstLP {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--primary-color);
-    background-color: var(--tertiary-color);
-    border-radius: 25px;
-}
-
-.firstLP img {
-    width: 800px;
-}
-
-.nextLP {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: var(--primary-color);
-    background-color: var(--secondary-color);
-    border-radius: 25px;
+  width: 400px;
+  text-align: center;
 }
 
 .contact {
-    height: 1000px;
-    background-color: var(--second-bg-color);
-    border: 2px solid var(--secondary-color);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+  height: 1000px;
+  background-color: var(--second-bg-color);
+  border: 2px solid var(--secondary-color);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .contact h2 {
-    text-align: center;
-    margin: 0 0 10px 0;
-    padding: 175px 40px 0 40px;
-    font-size: 48px;
-    font-weight: 300;
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--secondary-color);
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 175px 40px 0 40px;
+  font-size: 48px;
+  font-weight: 300;
+  color: var(--secondary-color);
+  border-bottom: 2px solid var(--secondary-color);
 }
 
 .icon-bar {
-    display: flex;
-    width: 100%;
-    background-color: none;
-    justify-content: space-evenly;
-    align-content: center;
-    padding: 0;
-    height: 150px;
-}
-  
-.icon-bar a{
-    text-align: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    padding: 15px 25px 5px 25px;
-    transition: all 0.3s ease;
-    color: var(--main-color);
-    font-size: 82px;
-    border-radius: 5px;
-    background: -webkit-linear-gradient(45deg, var(--primary-color), var(--secondary-color));
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+  display: flex;
+  width: 100%;
+  background-color: none;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 0;
+  height: 150px;
 }
 
-.facebook i{
-    padding: 0 10px;
+.icon-bar a {
+  text-align: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding: 15px 25px 5px 25px;
+  transition: all 0.3s ease;
+  color: var(--main-color);
+  font-size: 82px;
+  border-radius: 5px;
+  background: -webkit-linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.facebook:hover{
-    background: #3B5998;
-    -webkit-text-fill-color: white;
-    transition: ease-in-out 0.3s;
+.facebook i {
+  padding: 0 10px;
+}
+
+.facebook:hover {
+  background: #3b5998;
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
 }
 
 .instagram:hover {
-    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-    -webkit-text-fill-color: white;
-    transition: ease-in-out 0.3s;
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
 }
 
 .linkedin:hover {
-    background: #007bb5;
-    -webkit-text-fill-color: white;
-    transition: ease-in-out 0.3s;
+  background: #007bb5;
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
 }
 
 .github:hover {
-    background: #6e5494;
-    -webkit-text-fill-color: white;
-    transition: ease-in-out 0.3s;
+  background: #6e5494;
+  -webkit-text-fill-color: white;
+  transition: ease-in-out 0.3s;
 }
 
 .contact-form {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;
-    color: var(--secondary-color);
-    font-weight: 300;
-    text-align: center;
-    width: 50%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: var(--secondary-color);
+  font-weight: 300;
+  text-align: center;
+  width: 50%;
 }
 
 .contact-form > * {
-    flex: 1;
+  flex: 1;
 }
 
-.contact-form input, .contact-form textarea {
-    border: 1px solid var(--secondary-color);
-    display: block;
-    padding: 7px 15px;
-    font-size: 16px;
-    color: var(--secondary-color);
-    width: 40%;
-    margin: 0 auto 15px auto;
-    border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.75);
-  }
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid var(--secondary-color);
+  display: block;
+  padding: 7px 15px;
+  font-size: 16px;
+  color: var(--secondary-color);
+  width: 40%;
+  margin: 0 auto 15px auto;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
 
 .contact-form input {
-    width: 35%;
+  width: 35%;
 }
 
 .contact-form textarea {
-    height: 35%;
-    font-family: 'Poppins', sans-serif;
+  height: 35%;
+  font-family: "Poppins", sans-serif;
 }
 
 @media screen and (max-width: 1200px) {
-    nav {
-        background-image: none;
-        height: 175px;
-    }
-    
-    nav ul {
-        top: 90px;
-        display: flex;
-        flex-wrap: nowrap;
-    }
+  nav {
+    background-image: none;
+    height: 175px;
+  }
 
-    nav ul li a {
-        color: black;
-    }
-    
-    .about p {
-        width: 100%;
-    }
+  nav ul {
+    top: 90px;
+    display: flex;
+    flex-wrap: nowrap;
+  }
 
-    .projects {
-        height: 2200px;
-    }
+  nav ul li a {
+    color: black;
+  }
+
+  .about p {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 810px) {
+  .about p {
+    width: 100%;
+  }
 
-    .about p {
-        width: 100%;
-    }
+  .projects img {
+    width: 500px;
+    height: auto;
+  }
 
-    .projects img {
-        width: 500px;
-        height: auto;
-    }
-    
-    .icon-bar a {
-        font-size: 50px;
-    }
+  .icon-bar a {
+    font-size: 50px;
+  }
 
-    .firstLP img {
-        width: 700px;
-    }
+  .firstLP img {
+    width: 700px;
+  }
 }
 
 @media screen and (max-width: 683px) {
+  nav ul li a {
+    font-size: 16px;
+  }
 
-    nav ul li a {
-        font-size: 16px;
-    }
+  .about {
+    height: 1000px;
+  }
 
-    .about {
-        height: 1000px;
-    }
-    .projects {
-        height: 1800px;
-    }
-    
-    .projects img {
-        width: 300px;
-    }
+  .projects img {
+    width: 300px;
+  }
 
-    .firstLP img {
-        width: 400px;
-    }
+  .firstLP img {
+    width: 400px;
+  }
 
-    .contact-form input, .contact-form textarea {
-        width: 80%;
-      }
-
+  .contact-form input,
+  .contact-form textarea {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 614px) {
+  span {
+    font-size: 24px;
+    left: 20px;
+  }
 
-    span {
-        font-size: 24px;
-        left: 20px;
-    }
+  nav ul {
+    right: 20px;
+  }
 
-    nav ul {
-        right: 20px;
-    }
+  .hero-title {
+    padding: 0;
+    width: 70%;
+  }
 
-    .hero-title {
-        padding: 0;
-        width: 70%;
-    }
-
-    .hero-arrow {
-        top: 500px;
-        left: 15px;
-    }
-
+  .hero-arrow {
+    top: 500px;
+    left: 15px;
+  }
 }
 
 @media screen and (max-width: 534px) {
-    nav ul li {
-        padding: 10px;
-    }
+  nav ul li {
+    padding: 10px;
+  }
 }
 
 @media screen and (max-width: 425px) {
-    
-    .hero-title {
-        padding: 0;
-        width: 70%;
-        top: 290px;
-        font-size: 54px;
-    }
+  .hero-title {
+    padding: 0;
+    width: 70%;
+    top: 290px;
+    font-size: 54px;
+  }
 
-    .hero-arrow {
-        left: 280px;
-        top: 500px;
-    }
+  .hero-arrow {
+    left: 280px;
+    top: 500px;
+  }
 
-    .about {
-        height: 1200px;
-    }
+  .about {
+    height: 1200px;
+  }
 }
 
 @media screen and (max-width: 414px) {
+  nav ul li {
+    padding: 5px;
+  }
 
-    nav ul li {
-        padding: 5px;
-    }
+  .hero-title {
+    padding: 0;
+    width: 70%;
+    top: 320px;
+    font-size: 54px;
+  }
 
-    .hero-title {
-        padding: 0;
-        width: 70%;
-        top: 320px;
-        font-size: 54px;
-    }
+  .hero-arrow {
+    left: 250px;
+    top: 500px;
+  }
 
-    .hero-arrow {
-        left: 250px;
-        top: 500px;
-    }
+  .about {
+    height: 1200px;
+  }
 
-    .about {
-        height: 1200px;
-    }
+  .projects img {
+    width: 250px;
+  }
 
-    .projects img {
-        width: 250px;
-    }
+  .firstLP img {
+    width: 300px;
+  }
 
-    .firstLP img {
-        width: 300px;
-    }
+  .projects p {
+    width: 300px;
+  }
 
-    .projects p {
-        width: 300px;
-    }
-
-    .icon-bar a {
-        font-size: 42px;
-    }
+  .icon-bar a {
+    font-size: 42px;
+  }
 }
