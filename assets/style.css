@@ -123,7 +123,7 @@ nav ul li a:hover {
 }
 
 .projects {
-  height: 2700px;
+  height: 450vh;
   background-color: var(--second-bg-color);
   border: 2px solid var(--secondary-color);
   display: flex;
